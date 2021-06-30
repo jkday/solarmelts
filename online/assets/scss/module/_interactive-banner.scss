@@ -1,0 +1,163 @@
+/*------------------------------------*\
+    #Banners
+\*------------------------------------*/
+.banner-container {
+    background     : url(../images/banners/2.jpg) no-repeat fixed;
+    background-size: cover;
+    position       : relative;
+
+    .banner {
+        background-color: var(--global--color-primary);
+        padding         : 110px 85px 90px;
+
+        @media screen and (min-width:1400px) {
+            padding: 110px 110px 90px;
+        }
+
+        @media screen and (max-width:425px) {
+            transform: translate(0px, -30px);
+            padding  : 70px 15px 70px;
+        }
+
+        @media (min-width:426px) and (max-width:767px) {
+            padding  : 70px 15px 70px;
+            transform: translate(-20px, -30px);
+        }
+
+        @media (min-width:768px) and (max-width:991.98px) {
+            padding  : 70px 50px 70px;
+            transform: translate(-40px, -40px);
+        }
+
+        @media screen and (min-width:992px) {
+            transform: translate(-80px, -100px);
+        }
+
+        .heading-title {
+            font-size    : 50px;
+            line-height  : 55px;
+            margin-bottom: 35px;
+
+
+            @media (min-width: 992px) and (max-width: 1200px) {
+                font-size  : 36px;
+                line-height: 45px;
+            }
+
+            @media screen and (max-width:767px) {
+                font-size  : 24px;
+                line-height: 1.5;
+            }
+
+            @media screen and (min-width:768px) and (max-width:991px) {
+                font-size  : 40px;
+                line-height: 1.5;
+            }
+        }
+
+        .heading-subtitle {
+            margin-bottom: 29px;
+
+            @media screen and (max-width:767px) {
+                line-height: 1.5;
+            }
+        }
+
+        .heading-desc {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.banner-section {
+    @media screen and (max-width:991.98px) {
+        text-align: center;
+    }
+
+    .banner {
+
+        padding   : 126px 100px 124px;
+        min-height: 400px;
+
+        @media screen and (min-width:992px) {
+            min-height : 690px;
+            display    : flex;
+            align-items: center;
+        }
+
+        @media screen and(max-width:767px) {
+            padding: 100px 30px 80px;
+        }
+
+        &.counter {
+            padding: 113px 90px 120px;
+
+            @media #{$noteBook} {
+                padding-left : 60px;
+                padding-right: 60px;
+            }
+
+            @media screen and(max-width:767px) {
+
+                padding: 113px 30px 120px;
+            }
+
+            .heading-subtitle {
+                color: var(--global--color-primary);
+            }
+
+            .heading-title {
+                font-size: 50px;
+
+                @media screen and (min-width:992px) and (max-width:1400px) {
+                    font-size: 40px;
+                }
+
+                @media #{$maxLarge} {
+                    font-size  : 32px;
+                    line-height: 1.5;
+                }
+
+                @media #{$maxSmall} {
+                    font-size: 26px;
+                }
+            }
+
+            .heading-desc {
+                color: var(--global--color-gray);
+            }
+        }
+    }
+
+    .player {
+        display   : inline-block;
+        margin-top: 45px;
+
+        a {
+            display         : flex;
+            justify-content : center;
+            align-items     : center;
+            width           : 80px;
+            height          : 80px;
+            border-radius   : 50%;
+            background-color: var(--global--color-primary);
+            color           : var(--global--color-white);
+            transition      : 300ms ease-in-out;
+            cursor          : pointer;
+
+            &:hover {
+                background-color: var(--global--color-heading);
+
+                i {
+                    color: var(--global--color-white);
+                }
+            }
+
+            i {
+                color     : var(--global--color-white);
+                font-size : 18px;
+                transition: 300ms ease-in-out;
+            }
+        }
+    }
+}

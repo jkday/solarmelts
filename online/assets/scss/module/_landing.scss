@@ -1,0 +1,186 @@
+/*------------------------------------*\
+    #Landing Page / Promo Page
+\*------------------------------------*/
+
+.landing-hero {
+    min-height           : 700px;
+    padding              : 200px 0;
+    background-position  : right center;
+    background-repeat    : no-repeat;
+    background-attachment: fixed;
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+        padding-top: 150px;
+    }
+
+    img {
+        display      : inline-block;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        font-family  : var(--global--font-heading);
+        color        : var(--global--color-white);
+        font-size    : 48px;
+        font-weight  : 700;
+        line-height  : 65px;
+        margin-bottom: 40px;
+
+        @media only screen and (min-width: 320px) and (max-width: 767px) {
+            font-size  : 40px;
+            line-height: 50px;
+        }
+    }
+
+    p {
+        font-family: var(--global--font-heading);
+        color      : var(--global--color-white);
+        font-size  : 15px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    .hero-action {
+        .btn {
+            &:first-of-type {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+.landing-demos {
+    .showcase-card {
+        transition: all 200ms linear 0ms;
+        cursor    : pointer;
+
+        a {
+            position: relative;
+            display : block;
+        }
+
+        .showcase-img {
+            background-position: center;
+            background-repeat  : no-repeat;
+            background-size    : cover;
+            display            : block;
+            width              : 100%;
+            min-height         : 400px;
+            position           : relative;
+            z-index            : 2;
+            transition         : all 400ms ease-out 0s;
+        }
+
+        .showcase-content {
+            margin-top: 22px;
+
+            span {
+                font-size: 14px;
+            }
+
+            h4 {
+                font-size    : 16px;
+                margin-top   : 10px;
+                margin-bottom: 40px;
+                font-family  : 800;
+                transition   : all 300ms linear 0ms;
+                cursor       : pointer;
+
+                a {
+                    color: var(--global--color-heading);
+
+                    &:hover {
+                        color: var(--global--color-primary);
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            transform: translateY(-12px);
+
+            .showcase-img {
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .showcase-card {
+        max-width   : 370px;
+        margin-left : auto;
+        margin-right: auto;
+    }
+}
+
+.landing-action {
+    padding-top: 200px;
+
+    img {
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-family: var(--global--font-body);
+        font-size  : 20px;
+        color      : #ebebeb;
+        line-height: 28px;
+    }
+
+    p.subtitle {
+        font-family   : var(--global--font-heading);
+        color         : var(--global--color-primary);
+        font-size     : 15px;
+        font-weight   : 600;
+        line-height   : 26px;
+        margin-bottom : 10px;
+        text-transform: capitalize;
+    }
+
+    h2 {
+        font-family  : var(--global--font-heading);
+        color        : var(--global--color-white);
+        font-size    : 60px;
+        font-weight  : 700;
+        line-height  : 75px;
+        margin-bottom: 40px;
+    }
+}
+
+/* landing banners */
+
+.landing-banners {
+    padding: 230px 0;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .landing-action {
+        h2 {
+            font-size  : 40px;
+            line-height: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .landing-action {
+        h2 {
+            font-size  : 50px;
+            line-height: 60px;
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 991px) {
+    .landing-demos {
+        .portfolio-item {
+            max-width   : 370px;
+            margin-right: auto;
+            margin-left : auto;
+        }
+    }
+}

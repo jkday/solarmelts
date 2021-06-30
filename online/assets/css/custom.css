@@ -1,0 +1,143 @@
+.member-info b,
+.member-info h6,
+.td-color-blue {
+  color: #002897 !important;
+}
+.member-social a {
+  border: 1px solid;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+}
+.td-footer img.footer-logo {
+  width: 250px !important;
+}
+.td-footer .form-control {
+  background-color: white;
+  border: none;
+  color: #b9b9b9;
+  font-size: 14px;
+  font-weight: 400;
+  height: 42px;
+  line-height: 40px;
+  margin-bottom: 0;
+  border-radius: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 50px;
+  text-transform: capitalize;
+}
+.td-footer button {
+  background-color: var(--global--color-primary);
+  border: none;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 42px;
+  line-height: 41px;
+  color: var(--global--color-white);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin-left: 10px;
+}
+.td-footer button:hover {
+  color: #000;
+  background-color: var(--global--color-white);
+}
+.td-vission-wrap {
+  font-size: 20px;
+  font-family: var(--global--font-heading);
+  color: #ffffff !important;
+  font-style: normal;
+  line-height: 28px;
+  font-weight: 500;
+  padding: 30px 0 30px 30px;
+  position: relative;
+  background: var(--global--color-primary);
+}
+.td-vission-wrap p {
+  color: #fff !important;
+  font-size: 18px;
+}
+/* .td-vission-wrap.bg-black {
+  background: ;
+} */
+.work-gallery .work-item .work-item-container .work--img img {
+  width: 100%;
+  min-height: 100%;
+}
+.work-gallery .work-item-container .work--img {
+  height: 400px;
+}
+/* .td-related .work-item-container .work--img {
+  height: 320px;
+} */
+section.td-related {
+  background-color: #f9f9f9;
+}
+.work-list li {
+  font-family: var(--global--font-heading);
+  font-size: 14px;
+  color: var(--global--color-heading);
+  font-weight: 700;
+  display: inline-block;
+  line-height: 2.4;
+}
+.work-list li i {
+  margin-right: 10px;
+}
+.work-list li span {
+  color: var(--global--color-primary);
+}
+.work-list li span::first-letter {
+  text-transform: uppercase;
+}
+.work-list {
+  margin-bottom: 30px;
+}
+
+p.heading-desc rounding {
+  margin-bottom: 15px;
+  display: block;
+}
+.td-feature {
+  transition: all 0.3s ease;
+  padding: 25px;
+  margin-bottom: 20px;
+  min-height: 260px;
+}
+.td-feature:hover {
+  box-shadow: 2px 2px 13px rgb(0 0 0 / 15%);
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+.owl-carousel .item-video {
+  height: 700px;
+}
+/*@media (min-width: 992px) {*/
+/*  .owl-carousel .item-video {*/
+/*    height: 600px;*/
+/*  }*/
+/*}*/
+/*@media (min-width: 1180px) {*/
+/*  .owl-carousel .item-video {*/
+/*    height: 750px;*/
+/*  }*/
+/*}*/
+.owl-video-tn {
+  background-image: url("../images/work/medGrain_thumbnail.png") !important;
+  background-size: cover !important;
+}
+.owl-carousel .owl-video-play-icon {
+  background-size: 60px;
+}
+.work-single.work-small .work--img.td_slider {
+    max-height: 700px;
+    overflow: hidden;
+}

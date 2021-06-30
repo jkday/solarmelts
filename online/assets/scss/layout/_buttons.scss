@@ -1,0 +1,320 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+.btn {
+    font-family   : var(--global--font-heading);
+    position      : relative;
+    z-index       : 2;
+    font-size     : 13px;
+    font-weight   : 700;
+    text-transform: capitalize;
+    text-align    : center;
+    border-radius : 0;
+    padding       : 0;
+    line-height   : 48px;
+    width         : 170px;
+    height        : 50px;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+    transition    : all 0.3s ease-in-out;
+
+    &.no-shadow {
+        box-shadow: none;
+    }
+
+    &:focus,
+    &.active,
+    &:active {
+        box-shadow: none;
+        outline   : none;
+    }
+
+    i {
+        margin-right: 7px;
+        transition  : all 0.3s ease-in-out;
+    }
+}
+
+/* Button Primary */
+.btn--primary {
+    background-color: var(--global--color-primary);
+    color           : var(--global--color-white);
+    border          : 2px solid var(--global--color-primary);
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-heading);
+        border-color    : var(--global--color-heading);
+        color           : var(--global--color-white);
+    }
+
+    &.btn--inverse {
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: var(--global--color-white);
+            color           : var(--global--color-primary);
+            border-color    : var(--global--color-white);
+        }
+    }
+}
+
+/* Button Secondary*/
+.btn--secondary {
+    background-color: var(--global--color-heading);
+    color           : var(--global--color-white);
+    border          : 2px solid var(--global--color-heading);
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-primary);
+        color           : var(--global--color-white);
+        border-color    : var(--global--color-primary);
+    }
+
+    &.btn--inverse {
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: var(--global--color-white);
+            color           : var(--global--color-heading);
+            border-color    : var(--global--color-white);
+        }
+    }
+}
+
+/* Button White */
+.btn--white {
+    background-color: var(--global--color-white);
+    color           : var(--global--color-heading);
+    border          : 2px solid var(--global--color-white);
+
+    .btn-inversed {
+        background-color: transparent;
+        color           : var(--global--color-white);
+        border          : 2px solid var(--global--color-white);
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-primary);
+        color           : var(--global--color-white);
+        border-color    : var(--global--color-primary);
+    }
+
+    &.btn--inverse {
+
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: var(--global--color-heading);
+            color           : var(--global--color-white);
+            border-color    : var(--global--color-heading);
+        }
+    }
+
+    &.btn--secondary {
+        color           : var(--global--color-heading);
+        border-color    : var(--global--color-white);
+        background-color: var(--global--color-white);
+
+        &:active,
+        &:focus,
+        &:hover {
+            color           : var(--global--color-white);
+            background-color: var(--global--color-primary);
+            border-color    : var(--global--color-primary);
+        }
+    }
+}
+
+/* Buttons Custom */
+.btn--danger {
+    background-color: #dd3333;
+    color           : var(--global--color-white);
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-heading);
+        color           : var(--global--color-white);
+        border-color    : var(--global--color-heading);
+    }
+}
+
+.btn--success {
+    background-color: #81d742;
+    color           : var(--global--color-white);
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-heading);
+        color           : var(--global--color-white);
+        border-color    : var(--global--color-heading);
+    }
+}
+
+.btn--prime {
+    background-color: #1e73be;
+    color           : var(--global--color-white);
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-heading);
+        color           : var(--global--color-white);
+        border-color    : var(--global--color-heading);
+    }
+}
+
+.btn--purble {
+    background-color: #8224e3;
+    color           : var(--global--color-white);
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-heading);
+        color           : var(--global--color-white);
+        border-color    : var(--global--color-heading);
+    }
+}
+
+/* Button Fluid */
+.btn--block {
+    width: 100%;
+}
+
+/*Button Auto */
+
+.btn--auto {
+    width  : auto;
+    padding: 0 20px;
+}
+
+/* Button Rounded */
+.btn--rounded {
+    border-radius: 50px;
+}
+
+/* Buttons Shadow */
+.btn-shadow {
+    box-shadow: 0px 9px 30px 0px rgba(40, 40, 40, 0.15);
+}
+
+.btn-shadow-hover {
+
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: 0px 9px 30px 0px rgba(40, 40, 40, 0.15);
+    }
+}
+
+/* Button Bordered */
+.btn--bordered {
+    background-color: transparent;
+
+    &.btn--primary {
+        color       : var(--global--color-primary);
+        border-color: var(--global--color-primary);
+
+        &:active,
+        &:focus,
+        &:hover {
+            color           : var(--global--color-white);
+            background-color: var(--global--color-primary);
+            border-color    : var(--global--color-primary);
+        }
+    }
+
+    &.btn--secondary {
+        color       : var(--global--color-heading);
+        border-color: var(--global--color-heading);
+
+        &:active,
+        &:focus,
+        &:hover {
+            color           : var(--global--color-white);
+            background-color: var(--global--color-heading);
+            border-color    : var(--global--color-heading);
+        }
+    }
+
+    &.btn--white {
+        color       : var(--global--color-white);
+        border-color: var(--global--color-white);
+
+        &:active,
+        &:focus,
+        &:hover {
+            color           : var(--global--color-primary);
+            background-color: var(--global--color-white);
+            border-color    : var(--global--color-white);
+        }
+    }
+}
+
+.btn--slide {
+    :last-of-type {
+        margin-left: -6px;
+    }
+}
+
+.btn--slide-wide {
+    width: 270px;
+
+    @media screen and (max-width: 360px) {
+        width: 240px;
+    }
+}
+
+.btn--video {
+    color         : var(--global--color-white);
+    font-size     : 13px;
+    font-weight   : 600;
+    line-height   : 51px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: var(--global--color-primary);
+
+        i {
+            color: var(--global--color-primary);
+        }
+    }
+}
+
+.btn-transparent {
+    color           : var(--global--color-primary);
+    border-color    : var(--global--color-primary);
+    background-color: transparent;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color           : var(--global--color-white);
+        background-color: var(--global--color-heading);
+        border-color    : var(--global--color-heading)
+    }
+}
+
+/* Buttons Sizes */
+.btn-small {
+    width      : 170px;
+    height     : 41px;
+    line-height: 41px;
+}
+
+.btn-super {
+    width      : 170px;
+    height     : 61px;
+    line-height: 61px;
+}

@@ -1,0 +1,283 @@
+/*------------------------------------*\
+    #Video
+\*------------------------------------*/
+.video--button {
+    position: relative;
+
+    .popup-video {
+        text-align: center;
+        display   : inline-block;
+        position  : relative;
+
+        span {
+            position: relative;
+            width   : 88px;
+            height  : 88px;
+        }
+
+        span:before {
+            position       : absolute;
+            left           : -4px;
+            top            : -37px;
+            content        : "";
+            width          : 88px;
+            height         : 88px;
+            border         : 2px solid var(--global--color-white);
+            border-radius  : 50%;
+            opacity        : 1;
+            animation      : pulse 1s infinite linear;
+            animation-delay: .5s
+        }
+
+        i {
+            font-size       : 18px;
+            width           : 80px;
+            height          : 80px;
+            line-height     : 80px;
+            border-radius   : 50%;
+            background-color: var(--global--color-white);
+            color           : var(--global--color-heading);
+            position        : relative;
+            display         : inline-block;
+
+            &:hover {
+                color: var(--global--color-primary);
+            }
+        }
+
+        h6 {
+            color        : white;
+            font-size    : 13px;
+            font-weight  : 700;
+            padding-top  : 27px;
+            margin-bottom: 0;
+            line-height  : 1;
+        }
+
+        &:hover {
+            animation: none;
+        }
+    }
+}
+
+.video {
+    position: relative;
+
+    &:hover {
+        .player {
+            a {
+                background-color: var(--global--color-primary);
+
+                i {
+                    opacity   : 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    height: 700px;
+
+    @media screen and (max-width:1200px) {
+        height: 400px;
+    }
+
+    .player {
+        position : absolute;
+        top      : 50%;
+        left     : 50%;
+        transform: translate(-50%, -50%);
+        z-index  : 600;
+
+        a {
+            display         : flex;
+            justify-content : center;
+            align-items     : center;
+            width           : 80px;
+            height          : 80px;
+            border-radius   : 50%;
+            background-color: var(--global--color-white);
+            color           : var(--global--color-white);
+            transition      : 300ms ease-in-out;
+            cursor          : pointer;
+
+            &::before {
+                content         : "";
+                position        : absolute;
+                top             : 50%;
+                left            : 50%;
+                transform       : translate(-50%, -50%);
+                width           : 8px;
+                height          : 8px;
+                border-radius   : 50%;
+                background-color: var(--global--color-primary);
+            }
+
+            i {
+                opacity   : 0;
+                z-index   : 5;
+                visibility: hidden;
+                color     : var(--global--color-white);
+                font-size : 18px;
+                transition: 300ms ease-in-out;
+            }
+        }
+    }
+
+    &.features {
+        @media screen and (max-width:991.98px) {
+            height        : auto;
+            padding-top   : 300px;
+            padding-bottom: 300px;
+
+            .player {
+                top: 20%
+            }
+        }
+    }
+
+    overflow: visible;
+
+    .features-container {
+        transform: translateY(490px);
+    }
+}
+
+/* video #1 */
+.video-1 {
+    padding-top   : 0;
+    padding-bottom: 0;
+
+    .video--button {
+        height: 720px;
+    }
+}
+
+.video-2 {
+    position: relative;
+
+    &:hover {
+        .btn--video {
+            color: var(--global--color-primary);
+
+            i {
+                background-color: var(--global--color-primary);
+                color           : white;
+            }
+        }
+    }
+
+    .btn--video {
+        position      : absolute;
+        top           : 50%;
+        left          : 50%;
+        transform     : translate(-50%, -50%);
+        color         : white;
+        font-size     : 13px;
+        font-weight   : 700;
+        line-height   : 51px;
+        text-transform: capitalize;
+        width         : auto;
+
+        &::before {
+            content: unset;
+        }
+
+        i {
+            display         : inline-block;
+            width           : 81px;
+            height          : 81px;
+            line-height     : 81px;
+            border-radius   : 51px;
+            font-size       : 18px;
+            background-color: white;
+            color           : var(--global--color-primary);
+            margin-right    : 12px;
+        }
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity  : 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity  : 0;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .video-1 {
+
+        .video--button {
+            height: 400px;
+        }
+    }
+}
+
+.mfp-wrap {
+    z-index: 1642;
+}
+
+.mfp-bg {
+    z-index: 1543;
+}
+
+/*About Video*/
+.about-video {
+    position  : relative;
+    width     : 100%;
+    height    : 100%;
+    box-shadow: 0px 1px 73px 0px rgba(40, 40, 40, 0.1);
+
+    @media screen and (max-width:991.98px) {
+        margin-bottom: 50px;
+    }
+
+}
+
+.video-4 {
+    .player {
+        top      : 210px;
+        transform: none;
+    }
+}
+
+.video-5 {
+    @media #{$maxTablet} {
+        height : auto;
+        padding: 100px 0 50px;
+    }
+
+    .player {
+        transform: translate(-50%, -50%);
+
+        @media #{$maxTablet} {
+            top: 150px;
+        }
+    }
+
+    .fancy-box {
+
+        @media screen  and (min-width:992px) and (max-width:1200px){
+            transform: translateY(300px);
+        }
+        @media screen  and (min-width:1200px) {
+            transform: translateY(490px);
+        }
+    }
+}

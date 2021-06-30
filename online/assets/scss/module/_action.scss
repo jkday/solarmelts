@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    #Call To Action
+\*------------------------------------*/
+.cta {
+
+    .btn {
+        box-shadow: none;
+    }
+}
+
+.cta-1 {
+    padding: 150px 0;
+}
+
+.cta-2 {
+
+    .heading {
+        margin-bottom: 0;
+
+        .heading-title {
+            font-size    : 24px;
+            line-height  : 1;
+            margin-bottom: 9px;
+
+            @media #{$maxTablet} {
+                line-height: 1.5;
+            }
+        }
+
+        .heading-desc {
+            font-size    : 18px;
+            line-height  : 1;
+            margin-bottom: 0;
+            margin-top   : 0;
+
+            @media #{$maxTablet} {
+                line-height: 1.5;
+            }
+        }
+
+        .btn {
+            transform: translateY(-10px);
+        }
+    }
+}

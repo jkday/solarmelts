@@ -1,0 +1,76 @@
+/*------------------------------------*\
+    #Accordion
+\*------------------------------------*/
+/* Accordion Base */
+
+.accordion {
+
+    .card,
+    .card:first-of-type,
+    .card:not(:first-of-type):not(:last-of-type) {
+        padding      : 32px;
+        box-shadow   : none;
+        border       : 1px solid var(--global--color-gray-light);
+        margin-bottom: 15px;
+        border-radius: 0;
+
+        .card-heading {
+            padding: 0;
+
+            .card-link {
+                font-family    : var(--global--font-heading);
+                font-size      : 16px;
+                color          : var(--global--color-primary);
+                font-weight    : 600;
+                line-height    : 20px;
+                text-transform : capitalize;
+                position       : relative;
+                display        : flex;
+                align-items    : center;
+                justify-content: space-between;
+                padding-left   : 0;
+
+                &::after {
+                    /* symbol for "opening" cards */
+                    transition  : 0.3s ease-in-out;
+                    font-family : "Font Awesome 5 Free";
+                    font-weight : 700;
+                    content     : "\f068";
+                    font-size   : 11px;
+                    margin-right: 0px;
+                    color       : var(--global--color-primary);
+                }
+
+                &:hover {
+                    color: var(--global--color-primary);
+                }
+
+                &.collapsed {
+                    color: var(--global--color-heading);
+
+                    &:hover {
+                        color: var(--global--color-primary);
+                    }
+
+                    &::after {
+                        /* symbol for "collapsed" cards */
+                        content: "\f067";
+                    }
+                }
+            }
+
+        }
+
+        .card-body {
+            font-family: var(--global--font-body);
+            padding    : 22px 0 0 0;
+            font-size  : 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    .card:last-of-type {
+        margin-bottom: 15px;
+    }
+}

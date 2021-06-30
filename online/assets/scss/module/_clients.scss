@@ -1,0 +1,56 @@
+/*------------------------------------*\
+    #Client
+\*------------------------------------*/
+
+.clients {
+    padding-top   : 70px;
+    padding-bottom: 70px;
+
+    @media #{$maxTablet} {
+        padding-top   : 50px;
+        padding-bottom: 50px;
+
+    }
+
+    &.bg-grey {
+        color: var(--global--color-gray);
+    }
+
+    .client {
+        position   : relative;
+        line-height: 50px;
+        transition : 0.3s ease;
+
+        img {
+            max-width   : 100%;
+            width       : auto !important;
+            display     : block;
+            margin-right: auto;
+            margin-left : auto;
+        }
+    }
+}
+
+/* Client #1 */
+
+.clients-1 {
+    padding-top   : 70px;
+    padding-bottom: 70px;
+
+    @media #{$maxTablet} {
+        padding-top   : 50px;
+        padding-bottom: 50px;
+
+    }
+}
+
+/* Client #2 */
+.clients-2 {
+    border-top: 1px solid var(--global--color-gray-light);
+}
+
+@media only screen and (max-width: 991px) {
+    .client {
+        margin-bottom: 20px;
+    }
+}

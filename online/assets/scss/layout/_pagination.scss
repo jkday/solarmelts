@@ -1,0 +1,144 @@
+/*------------------------------------*\
+    #PAGINATION
+\*------------------------------------*/
+.pagination {
+    display      : block;
+    margin       : 0;
+    border-radius: 0;
+
+    li {
+        margin-right: 10px;
+        display     : inline-block;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a,
+        span {
+            background-color: var(--global--color-gray);
+            color           : var(--global--color-heading);
+            font-family     : var(--global--font-heading);
+            font-size       : 13px;
+            font-weight     : 700;
+            border          : none;
+            text-transform  : uppercase;
+            padding         : 0;
+            width           : 50px;
+            height          : 50px;
+            line-height     : 50px;
+            text-align      : center;
+            border-radius   : 0px;
+            display         : inline-block;
+            transition      : 0.3s ease-in-out;
+
+            &.current,
+            &:hover {
+                background-color: var(--global--color-primary);
+                color           : var(--global--color-white);
+                border-color    : var(--global--color-primary);
+            }
+        }
+    }
+}
+
+.pagination-nav {
+    .pagination {
+        display      : block;
+        margin       : 0;
+        border-radius: 0;
+
+        >a {
+            display: none;
+        }
+
+        .nav-links {
+
+            a,
+            span {
+                margin          : 0 5px;
+                background-color: var(--global--color-gray);
+                color           : var(--global--color-heading);
+                font-family     : var(--global--font-heading);
+                font-size       : 14px;
+                font-weight     : 700;
+                border          : none;
+                text-transform  : uppercase;
+                padding         : 0;
+                width           : 50px;
+                height          : 50px;
+                line-height     : 50px;
+                text-align      : center;
+                border-radius   : 0;
+                display         : inline-block;
+
+                &:hover {
+                    background-color: var(--global--color-primary);
+                    color           : var(--global--color-white);
+                    border-color    : var(--global--color-primary);
+                }
+            }
+
+            .current {
+                background-color: var(--global--color-primary);
+                color           : var(--global--color-white);
+                border-color    : var(--global--color-primary);
+            }
+        }
+    }
+}
+
+.pagination-buttons {
+
+    .next-page,
+    .prev-page {
+        a {
+            font-family     : var(--global--font-heading);
+            background-color: var(--global--color-primary);
+            color           : var(--global--color-white);
+            font-size       : 16px;
+            font-weight     : 700;
+            text-transform  : uppercase;
+            width           : 170px;
+            height          : 50px;
+            line-height     : 50px;
+            text-align      : center;
+            display         : inline-block;
+
+            &:hover {
+                background-color: var(--global--color-heading);
+                color           : var(--global--color-white);
+            }
+        }
+    }
+
+    .next-page {
+        text-align: right;
+    }
+}
+
+.page-link {
+    font-size       : 15px;
+    font-weight     : 400;
+    line-height     : 25px;
+    margin-bottom   : 16px;
+    color           : var(--global--color-body);
+    background-color: transparent;
+    border          : none;
+    padding         : 0;
+
+    &:hover {
+        background-color: transparent;
+        border          : none;
+        color           : var(--global--color-heading);
+        cursor          : auto;
+    }
+
+    a {
+        color: var(--global--color-heading);
+
+        &:hover {
+            color: var(--global--color-primary);
+        }
+    }
+}

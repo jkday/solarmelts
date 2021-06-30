@@ -1,0 +1,178 @@
+/*--------------------------------
+    #pricing
+---------------------------------*/
+.pricing {
+    padding-bottom: 134px;
+
+    @media #{$maxTablet} {
+        padding-bottom: 84px;
+    }
+
+    .pricing-panel {
+        background-color: var(--global--color-white);
+        padding         : 50px 40px;
+        overflow        : hidden;
+        box-shadow      : 0px 2px 6px 0px rgba(40, 40, 40, 0.1);
+
+        @media #{$maxTablet} {
+            text-align: center;
+            max-width : 370px;
+            margin    : 0 auto 40px;
+        }
+
+        .pricing-heading {
+            h4 {
+                font-family   : var(--global--font-body);
+                font-size     : 16px;
+                line-height   : 1;
+                color         : var(--global--color-primary);
+                margin-bottom : 15px;
+                padding-bottom: 19px;
+                position      : relative;
+                text-transform: capitalize;
+                transition    : 300ms ease-in-out;
+
+                &::after {
+                    content         : "";
+                    position        : absolute;
+                    bottom          : 0;
+                    left            : 0;
+                    height          : 2px;
+                    width           : 100%;
+                    background-color: var(--global--color-primary);
+                }
+            }
+
+            .pricing-desc {
+                font-family  : var(--global--font-body);
+                font-size    : 15px;
+                color        : #a5a5a5;
+                line-height  : 21px;
+                margin-bottom: 43px;
+            }
+
+            p {
+                font-family  : var(--global--font-heading);
+                font-size    : 70px;
+                font-weight  : 600;
+                color        : var(--global--color-heading);
+                display      : flex;
+                align-items  : baseline;
+                line-height  : 46px;
+                margin-bottom: 3px;
+
+                @media screen and(max-width:991.98px) {
+                    justify-content: center;
+                }
+
+                .currency {
+                    font-weight : 700;
+                    font-size   : 28px;
+                    margin-right: 5px;
+                }
+
+                .time {
+                    font-weight: 700;
+                    font-size  : 13px;
+                }
+            }
+        }
+
+        .pricing-body {
+            padding: 12px 0 17px;
+
+            .pricing-list {
+                margin-bottom: 9px;
+
+                li {
+                    font-family  : var(--global--font-body);
+                    font-size    : 16px;
+                    line-height  : 35px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+
+    .pricing-active {
+        background-color: var(--global--color-primary);
+        position        : relative;
+        z-index         : 2;
+        box-shadow      : none;
+
+        .pricing-heading {
+            h4 {
+                color: var(--global--color-white);
+
+                &::after {
+                    background-color: var(--global--color-white);
+                }
+            }
+
+            .pricing-desc {
+                color: var(--global--color-white);
+            }
+
+            p {
+                color: var(--global--color-white);
+            }
+        }
+
+        .pricing-body {
+            .pricing-list {
+                color: var(--global--color-white);
+            }
+        }
+
+        .btn {
+            box-shadow: 0px 9px 30px 0px rgba(40, 40, 40, 0.15);
+        }
+    }
+
+    &.pricing-2 {
+        overflow        : visible;
+        z-index         : 2;
+        position        : relative;
+        margin-top      : -238px;
+        background-color: transparent;
+    }
+
+    &.pricing-3 {
+        padding-bottom: 50px;
+    }
+}
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .pricing {
+        padding-top   : 70px;
+        padding-bottom: 70px;
+
+        .heading {
+            margin-top: 0;
+        }
+
+        .pricing-panel {
+            max-width: 400px;
+            margin   : 0 auto 30px;
+        }
+
+        .pricing-active {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+/* Tablets */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .pricing {
+        padding-top   : 70px;
+        padding-bottom: 70px;
+
+        .heading {
+            margin-top: 0;
+        }
+    }
+}
